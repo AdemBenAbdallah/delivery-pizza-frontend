@@ -1,0 +1,32 @@
+.paid {
+    color:#32ad84 !important ;
+}
+.orders{
+    margin-top: 43px;
+    display: flex;
+    gap: 110px;
+}
+.done , .inProssing , .undone {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    margin-top: 33px;
+}
+.done {
+    opacity: 1;
+}
+.inProssing {
+    animation: inProcess 1s 1s infinite ease alternate;
+}
+@keyframes inProcess {
+    0%   {
+        opacity: .3;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.undone{
+    opacity: .3;
+}

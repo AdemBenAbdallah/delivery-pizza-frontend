@@ -1,0 +1,29 @@
+.admin{
+    display: flex;
+    margin-top: 34px;
+    margin-bottom: 34px;
+}
+.admin .products, .order {
+    flex: 1;
+}
+.admin h2{
+    margin-left: 30px;
+    margin-bottom: 49px;
+}
+.admin td div{
+    display: flex;
+    justify-content: center;
+}
+.admin .action button:first-child{
+    background-color: cadetblue;
+    border: none;
+    padding: 4px;
+    color: white;
+    margin-right: 6px;
+}
+.admin .action button:last-child{
+    background-color: rgb(158, 15, 15);
+    border: none;
+    padding: 4px;
+    color: white;
+}

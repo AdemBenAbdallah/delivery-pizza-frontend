@@ -1,0 +1,41 @@
+footer{
+    height: calc(100vh - 100px);
+    display: flex;
+}
+footer .img{
+    flex: 2;
+    width: 300px;
+}
+footer .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+footer .box{
+    flex: 3;
+    display: flex;
+    background-color: #000000d1;
+    color: white;
+}
+.content .title{
+    text-transform: uppercase;
+    color: white;
+    margin: 29px 29px;
+    width: 155px;
+    font-size: 24px;
+}
+footer .box .content {
+    margin: 23px 12px;
+}
+.content h3  {
+    color: #b7903c;
+    text-transform: capitalize;
+    font-size: 23px;
+}
+.address , .date{
+    margin: 34px 0;
+}
+footer .address p , footer .date p {
+    color: rgb(255 255 255 / 70%);
+    font-size: 16px;
+}

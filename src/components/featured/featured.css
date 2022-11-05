@@ -1,0 +1,32 @@
+.featured{
+    width: 100%;
+    height: calc(100vh - 100px);
+    overflow: hidden;
+}
+.wrapper{
+    display: flex;
+    width: 300vw;
+    height: 100%;
+    transition: all 1s ease-in-out;
+}
+.featured .image{
+    width: 100%;
+    height: 100%;
+}
+.featured .image img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.arrow img {
+    position: absolute;
+    width: 10%;
+    height: 20%;
+    z-index: 33;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+    object-fit: contain;
+}

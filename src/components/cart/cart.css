@@ -1,0 +1,127 @@
+.cart{
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+.left{
+    flex: 3;
+    margin: 44px 23px;
+}
+.right{
+    flex: 1;
+}
+table{
+    width: 90%;
+}
+table .img{
+    display: flex;
+    justify-content: center;
+    margin-top: 6px;
+}
+table tr td span{
+    display: flex;
+    justify-content: center;
+    
+}
+table tr .desc {
+    text-align: center;
+}
+.extras span{
+    width: 150px;
+    margin: auto;
+    text-align: center;
+}
+.right{
+    background-color: rgba(0, 0, 0, 0.753);
+    padding: 38px;
+    color: white;
+    margin: 23px;
+    height: 200px;
+    width: 70%;
+}
+.right h2{
+    margin-bottom: 25px;
+}
+.right .desc p{
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 6px;
+    margin-top: 0;
+}
+.right .desc p span{
+    font-weight: normal;
+    font-size: 14px;
+}
+.right  button{
+    margin-top: 23px;
+    padding: 10px 0;
+    color: #d1411e;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+}
+.total span{
+    font-weight: 700;
+}
+
+.delivery{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: hsla(0, 0%, 0%, 0.363);
+}
+
+.dev .box {
+    color: black;
+    background-color: white;
+    position: absolute;
+    top: 91%;
+    left: 54%;
+    transform: translate(-50% , -50%);
+    padding: 30px;
+    border-radius: 10px;
+}
+.input{
+    margin-bottom: 20px;
+}
+.input p{
+    margin: 7px 0;
+    font-size: 16px;
+}
+.input input , .input textarea {
+    width: 100%;
+    padding: 4px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #000000ab;
+}
+
+.dev button{
+    width: fit-content;
+    background-color: cadetblue;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    display : block;
+    margin: auto;
+}
+
+@media (max-width : 700px) {
+    .cash table tr th:nth-child(3) , .cash table tr td:nth-child(3) {
+        display: none;
+    }
+    .left table{
+        width: 100%;
+    }
+    .dev .box{
+        top: 63%;
+        left: 50%;
+        width: 253px;
+    }
+    .payment table tr th:nth-child(1) , .payment table tr td:nth-child(1) {
+        display: none;
+    }
+}

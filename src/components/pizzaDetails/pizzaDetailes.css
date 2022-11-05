@@ -1,0 +1,99 @@
+section{
+    display: flex;
+    height: calc(100vh - 100px);
+}
+section .image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin: auto 0;
+
+}
+section .image img{
+    padding: 24px;
+}
+section .desc{
+    flex: 1;
+}
+section .desc p:nth-child(1){
+    margin-top: 50px;
+    font-size: 23px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.desc .price{
+    color: #d1411e;
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 33px;
+}
+.desc .title-pizza , .ingredient{
+    margin-top: 40px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.desc .desc-pizza{
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 8px;
+    width: 90%;
+}
+.size{
+    display: flex;
+    gap: 30px;
+    margin-top: 18px;
+    margin-bottom: 12px;
+}
+.size .pizza-size{
+    position: relative;
+    cursor: pointer;
+}
+
+.size .pizza-size p{
+    position: absolute;
+    top: 0;
+    font-size: 10px;
+    right: -14px;
+    padding: 4px;
+    color: white;
+    background-color: teal;
+    border-radius: 12px;
+}
+.ing{
+    display: flex;
+    gap: 23px;
+}
+.ing .box span{
+    margin-left: 9px;
+    font-size: 15px;
+}
+.add_cart{
+    margin-bottom: 50px;
+    margin-top: 34px;
+}
+.add_cart input{
+    width: 50px;
+    padding: 5px;
+    outline: none;
+}
+.add_cart button{
+    margin-left: 12px;
+    color: white;
+    background-color: #d1411e;
+    padding: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width : 700px) {
+    section{
+        flex-wrap: wrap;
+    }
+    section .image img {
+        width: 202px;
+        height: 202px;
+    }
+    section .desc{
+        margin: -79px 31px 23px;
+    } 
+}

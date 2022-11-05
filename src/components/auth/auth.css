@@ -1,0 +1,38 @@
+.auth{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 3333;
+}
+.auth .box{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    width: 250px;
+}
+.auth .box input{
+    height: 30px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.auth .box button{
+    padding: 8px 19px;
+    background-color: cadetblue;
+    border: none;
+    width: fit-content;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    outline: none;
+}
+.auth .box button:hover{
+    background-color: rgb(92, 189, 192);
+}
